@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "system-goal-operating-model-client-side-solution",
+    "id": "7ee25cd8-a1d1-4c27-bf6e-368ebce65056",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "system-goal-operating-model description"
+      },
+      "longDescription": {
+        "default": "system-goal-operating-model description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "system-goal-operating-model Feature",
+        "description": "The feature that activates elements of the system-goal-operating-model solution.",
+        "id": "25f7b7e0-977f-4ff1-8fa2-630e807b421e",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/system-goal-operating-model.sppkg"
+  }
+}

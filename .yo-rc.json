@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.16.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.19.0",
+    "libraryName": "system-goal-operating-model",
+    "libraryId": "7ee25cd8-a1d1-4c27-bf6e-368ebce65056",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "system-goal-operating-model",
+    "solutionShortDescription": "system-goal-operating-model description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
