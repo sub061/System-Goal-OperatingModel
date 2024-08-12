@@ -524,7 +524,7 @@ export default class SystemGoalOperatingModel extends React.Component<
                   </div>
 
                   <div>
-                    <div className="system_goel_container">
+                    <div className="system_goel_container d-none">
                       {/** Box Model */}
                       {goalHirerachyData.map((goal: any) => (
                         <div
@@ -889,6 +889,274 @@ export default class SystemGoalOperatingModel extends React.Component<
                         </div>
                       ))}
                     </div>
+                  </div>
+                  <div className="system_oprating_model">
+                  <div className="system_goel_container">
+  <div className="box_model ">
+    <div className="header">Quality Experience</div>
+    <div>
+      <div>
+        <div className="inner_container">
+          <div className="inner_header">Throughput and Access</div>
+          <table>
+            <thead className="kpi_name_title">
+              <tr>
+                <th>
+                  Excess Days
+                  <div>YTD 24: [month-month]</div>
+                </th>
+                <th>
+                  Baseline <br /> (FY 23)
+                </th>
+                <th>FYTD24</th>
+                <th>Threshold</th>
+                <th>Target</th>
+                <th>Max</th>
+                <th>Points</th>
+                <th className="comments">Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>200996</td>
+                <td>191620</td>
+                <td>190599</td>
+                <td>187530</td>
+                <td>184460</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead className="kpi_name_title">
+              <tr>
+                <th>
+                  HTN BP Control (%)
+                  <div className="small_title">YTD 24: [month-month]</div>
+                </th>
+                <th>
+                  Baseline <br /> (FY 23)
+                </th>
+                <th>FYTD24</th>
+                <th>Threshold</th>
+                <th>Target</th>
+                <th>Max</th>
+                <th>Points</th>
+                <th className="comments">Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead className="kpi_name_title">
+              <tr>
+                <th>
+                  DM BP (%)
+                  <div className="small_title">YTD 24: [month-month]</div>
+                </th>
+                <th>
+                  Baseline <br /> (FY 23)
+                </th>
+                <th>FYTD24</th>
+                <th>Threshold</th>
+                <th>Target</th>
+                <th>Max</th>
+                <th>Points</th>
+                <th className="comments">Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+              <tr className="division_avg ">
+                <td>
+                  <button>Metro Boston Division (Avg)</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead className="kpi_name_title">
+              <tr>
+                <th>
+                  DM A1c (%)
+                  <div className="small_title">YTD 24: [month-month]</div>
+                </th>
+                <th>
+                  Baseline <br /> (FY 23)
+                </th>
+                <th>FYTD24</th>
+                <th>Threshold</th>
+                <th>Target</th>
+                <th>Max</th>
+                <th>Points</th>
+                <th className="comments">Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button>Joslin</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+              <tr className="division_avg ">
+                <td>
+                  <button>Metro Boston Division (Avg)</button>
+                </td>
+                <td>70.8</td>
+                <td>52.6</td>
+                <td>76.1</td>
+                <td>78.1</td>
+                <td>80.1</td>
+                <td>0</td>
+                <td>
+                  <textarea defaultValue={""} />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                    
                   </div>
                 </>
               ))}
