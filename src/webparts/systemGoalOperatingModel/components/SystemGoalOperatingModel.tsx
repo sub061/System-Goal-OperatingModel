@@ -14,8 +14,8 @@ import type {
   ISystemGoal,
   ISystemGoalOperatingModelKpiProps,
   ISystemGoalOperatingModelProps,
-} from "./ISystemGoalOperatingModelProps";
-import { escape } from "@microsoft/sp-lodash-subset";
+} from "./ISystemGoalOperatingModelKpiProps";
+//import { escape } from "@microsoft/sp-lodash-subset";
 
 export interface ISystemGoalOperatingModelWpState {
   title: string;
@@ -339,7 +339,7 @@ export default class SystemGoalOperatingModel extends React.Component<
       dataAllHospital,
       dataKPI,
     } = this.state;
-
+    console.log("dataGoalMetrix", dataGoalMetrix);
     const hirerachicalHospitalData = this.prepareHospitalHirerachy(
       dataAllHospital || []
     );

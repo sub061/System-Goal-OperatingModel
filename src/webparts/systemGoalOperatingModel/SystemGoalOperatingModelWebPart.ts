@@ -10,7 +10,7 @@ import { IReadonlyTheme } from '@microsoft/sp-component-base';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 import * as strings from 'SystemGoalOperatingModelWebPartStrings';
 import SystemGoalOperatingModel from './components/SystemGoalOperatingModel';
-import { IGoal, IGoalMetrix, IHospital, IKPI, IOperatingModel, ISubGoal, ISystemGoal, ISystemGoalOperatingModelProps } from './components/ISystemGoalOperatingModelProps';
+import { IGoal, IGoalMetrix, IHospital, IKPI, IOperatingModel, ISubGoal, ISystemGoal, ISystemGoalOperatingModelProps } from './components/ISystemGoalOperatingModelKpiProps';
 
 export interface ISystemGoalOperatingModelWebPartProps {
   description: string;
@@ -169,7 +169,7 @@ export default class SystemGoalOperatingModelWebPart extends BaseClientSideWebPa
       const getGoal = await this.getGoalConfiguration();
       const getSystemGoal = await this.getSystemGoalConfiguration();
       const getAllHospital = await this.getAllHospitalConfiguration();
-      
+      console.log('getOperatingModel', getOperatingModel);
       const pageTitle = this.properties.title;
 
       const element: React.ReactElement<ISystemGoalOperatingModelProps> = React.createElement(
@@ -190,12 +190,12 @@ export default class SystemGoalOperatingModelWebPart extends BaseClientSideWebPa
         }
       );
 
-      const domElement = document.querySelector('[data-sp-web-part-id="0d46ba9c-5483-423a-8bd0-a366a99a6608"]');
+      //const domElement = document.querySelector('[data-sp-web-part-id="0d46ba9c-5483-423a-8bd0-a366a99a6608"]');
       // console.log("Dom element ---->", domElement)
       // console.log("element ---->", element);
 
-      if (domElement) {
-        ReactDom.render(element, domElement);
+      if (this.domElement) {
+        ReactDom.render(element, this.domElement);
       } else {
         // console.error('The specified DOM element is not found.');
       }
