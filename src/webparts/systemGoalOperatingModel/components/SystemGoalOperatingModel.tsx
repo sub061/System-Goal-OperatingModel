@@ -890,6 +890,9 @@ export default class SystemGoalOperatingModel extends React.Component<
                       ))}
                     </div>
                   </div>
+
+
+                  {/* static */}
                   <div className="system_oprating_model">
                   <div className="system_goel_container">
   <div className="box_model ">
