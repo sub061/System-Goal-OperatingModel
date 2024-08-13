@@ -169,6 +169,7 @@
             }
             button{
               height: 40px;
+              pointer-events: none;
             }
             a{
               min-width: unset;

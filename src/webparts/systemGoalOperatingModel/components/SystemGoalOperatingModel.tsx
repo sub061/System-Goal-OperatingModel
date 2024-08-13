@@ -491,7 +491,7 @@ export default class SystemGoalOperatingModel extends React.Component<
                                 }
                               />
                               <span>
-                                {division.name} {division.id}
+                                {division.name}
                               </span>
                             </label>
                           </div>
@@ -511,7 +511,6 @@ export default class SystemGoalOperatingModel extends React.Component<
                                   />
                                   <span>
                                     {hospital.title}
-                                    {hospital.id}
                                   </span>
                                 </label>
                               </div>
@@ -688,8 +687,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                                   dataGoalMetrix,
                                                                   "URL"
                                                                 ) === null
-                                                                    ? "disabled"
-                                                                    : ""
+                                                                  ? "disabled"
+                                                                  : ""
                                                                   }`}
                                                               >
                                                                 Click
@@ -701,8 +700,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                       {allHospitalsSelected && (
                                                         <tr
                                                           className={`division_avg ${division.id == null
-                                                              ? "d-none"
-                                                              : ""
+                                                            ? "d-none"
+                                                            : ""
                                                             }`}
                                                         >
                                                           <td>
@@ -773,8 +772,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                                 dataGoalMetrix,
                                                                 "URL"
                                                               ) === null
-                                                                  ? "disabled"
-                                                                  : ""
+                                                                ? "disabled"
+                                                                : ""
                                                                 }`}
                                                             >
                                                               Click
@@ -860,8 +859,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                           dataGoalMetrix,
                                                           "URL"
                                                         ) === null
-                                                            ? "disabled"
-                                                            : ""
+                                                          ? "disabled"
+                                                          : ""
                                                           }`}
                                                       >
                                                         Click
@@ -924,7 +923,9 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>187530</td>
                                     <td>184460</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <a href="https://app.powerbi.com/groups/me/apps/7e10b0b9-eae6-4962-bb53-952ddd2714e0/reports/b7cc86fa-7053-450a-ab65-5344d42f5b50/ReportSection93bf9ebdee27f5f84d31?experience=power-bi" target="_blank" className="details">Click</a>
+                                    </td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -939,7 +940,9 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>187530</td>
                                     <td>184460</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <a href="https://app.powerbi.com/groups/me/apps/7e10b0b9-eae6-4962-bb53-952ddd2714e0/reports/b7cc86fa-7053-450a-ab65-5344d42f5b50/ReportSection93bf9ebdee27f5f84d31?experience=power-bi" target="_blank" className="details">Click</a>
+                                    </td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -976,7 +979,7 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>78.1</td>
                                     <td>80.1</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://bilh.sharepoint.com/:x:/s/BILHPNReports/EcV6n-t85wpHlLhCkTF91LcBxE5q4vOegsKHz7pfUWGCVA?wdLOR=c60CC9916-1785-794B-9322-BBA6831B85E5" className="details">Click</a></td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -991,7 +994,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>78.1</td>
                                     <td>80.1</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://bilh.sharepoint.com/:x:/s/BILHPNReports/EcV6n-t85wpHlLhCkTF91LcBxE5q4vOegsKHz7pfUWGCVA?wdLOR=c60CC9916-1785-794B-9322-BBA6831B85E5" className="details">Click</a></td>
+
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1006,7 +1010,7 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>78.1</td>
                                     <td>80.1</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://bilh.sharepoint.com/:x:/s/BILHPNReports/EcV6n-t85wpHlLhCkTF91LcBxE5q4vOegsKHz7pfUWGCVA?wdLOR=c60CC9916-1785-794B-9322-BBA6831B85E5" className="details">Click</a></td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1043,7 +1047,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>73.7</td>
                                     <td>75.7</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://bilh.sharepoint.com/:x:/s/BILHPNReports/EcV6n-t85wpHlLhCkTF91LcBxE5q4vOegsKHz7pfUWGCVA?wdLOR=c60CC9916-1785-794B-9322-BBA6831B85E5" className="details">Click</a></td>
+
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1058,7 +1063,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>78.1</td>
                                     <td>80.1</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://bilh.sharepoint.com/:x:/s/BILHPNReports/EcV6n-t85wpHlLhCkTF91LcBxE5q4vOegsKHz7pfUWGCVA?wdLOR=c60CC9916-1785-794B-9322-BBA6831B85E5" className="details">Click</a></td>
+
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1095,7 +1101,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>71.1</td>
                                     <td>73.1</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://bilh.sharepoint.com/:x:/s/BILHPNReports/EcV6n-t85wpHlLhCkTF91LcBxE5q4vOegsKHz7pfUWGCVA?wdLOR=c60CC9916-1785-794B-9322-BBA6831B85E5" className="details">Click</a></td>
+
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1110,7 +1117,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>71.1</td>
                                     <td>73.1</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://bilh.sharepoint.com/:x:/s/BILHPNReports/EcV6n-t85wpHlLhCkTF91LcBxE5q4vOegsKHz7pfUWGCVA?wdLOR=c60CC9916-1785-794B-9322-BBA6831B85E5" className="details">Click</a></td>
+
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1124,8 +1132,9 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>76.1</td>
                                     <td>78.1</td>
                                     <td>80.1</td>
-                                    <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://bilh.sharepoint.com/:x:/s/BILHPNReports/EcV6n-t85wpHlLhCkTF91LcBxE5q4vOegsKHz7pfUWGCVA?wdLOR=c60CC9916-1785-794B-9322-BBA6831B85E5" className="details">Click</a></td>
+
+                                    <td><a href="" className="details disabled">Click</a></td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1163,7 +1172,7 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>59.51</td>
                                     <td>62.61</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a href="" className="details disabled">Click</a></td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1201,7 +1210,7 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>87.8</td>
                                     <td>87.9</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a href="" className="details disabled">Click</a></td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1216,7 +1225,7 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>78.1</td>
                                     <td>80.1</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a href="" className="details disabled">Click</a></td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
@@ -1253,7 +1262,7 @@ export default class SystemGoalOperatingModel extends React.Component<
                                     <td>10.05</td>
                                     <td>9.85</td>
                                     <td>0</td>
-                                    <td><a href="" className="details">Click</a></td>
+                                    <td><a target="_blank" href="https://app.powerbi.com/groups/me/apps/7e10b0b9-eae6-4962-bb53-952ddd2714e0/reports/b7cc86fa-7053-450a-ab65-5344d42f5b50/ReportSection93bf9ebdee27f5f84d31?experience=power-bi" className="details">Click</a></td>
                                     <td>
                                       <textarea defaultValue={""} />
                                     </td>
