@@ -158,6 +158,9 @@
   opacity: 0.5;
   pointer-events: none;
 }
+.system_oprating_model .system_goel_container .box_model .inner_container tbody td button {
+  height: 40px;
+}
 .system_oprating_model .system_goel_container .box_model .inner_container tbody td a {
   min-width: unset;
   padding: 4px 8px;

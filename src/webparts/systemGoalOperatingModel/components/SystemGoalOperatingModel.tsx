@@ -130,8 +130,8 @@ export default class SystemGoalOperatingModel extends React.Component<
           isChecked
             ? [...prevState.selectedOrganizations, organizationId]
             : [...prevState.selectedOrganizations].filter(
-                (id) => id !== organizationId
-              )
+              (id) => id !== organizationId
+            )
         ),
       };
     });
@@ -471,9 +471,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                     {hirerachicalHospitalData[0].division.map(
                       (division: any) => (
                         <div
-                          className={`inner_btn_group ${
-                            division.id == null ? "d-none" : ""
-                          }`}
+                          className={`inner_btn_group ${division.id == null ? "d-none" : ""
+                            }`}
                         >
                           <div className="cat action secondary">
                             <label>
@@ -528,9 +527,8 @@ export default class SystemGoalOperatingModel extends React.Component<
                       {/** Box Model */}
                       {goalHirerachyData.map((goal: any) => (
                         <div
-                          className={`box_model ${
-                            !checkedSystemGoalsNew.has(goal.id) ? "d-none" : ""
-                          }`}
+                          className={`box_model ${!checkedSystemGoalsNew.has(goal.id) ? "d-none" : ""
+                            }`}
                         >
                           <div className="header">{goal.name}</div>
                           <div>
@@ -601,12 +599,12 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                               !selectedHospitalsNew.has(
                                                                 hospital.id
                                                               ) ||
-                                                              [
-                                                                18, 19, 20, 21,
-                                                                22,
-                                                              ].indexOf(
-                                                                hospital.id
-                                                              ) !== -1
+                                                                [
+                                                                  18, 19, 20, 21,
+                                                                  22,
+                                                                ].indexOf(
+                                                                  hospital.id
+                                                                ) !== -1
                                                                 ? "d-none"
                                                                 : ""
                                                             }
@@ -683,17 +681,16 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                                   "URL"
                                                                 )}
                                                                 target="_blank"
-                                                                className={`details ${
-                                                                  this.findMatrixValues(
-                                                                    subGoal.id,
-                                                                    kpi.id,
-                                                                    hospital.id,
-                                                                    dataGoalMetrix,
-                                                                    "URL"
-                                                                  ) === null
+                                                                className={`details ${this.findMatrixValues(
+                                                                  subGoal.id,
+                                                                  kpi.id,
+                                                                  hospital.id,
+                                                                  dataGoalMetrix,
+                                                                  "URL"
+                                                                ) === null
                                                                     ? "disabled"
                                                                     : ""
-                                                                }`}
+                                                                  }`}
                                                               >
                                                                 Click
                                                               </a>
@@ -703,11 +700,10 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                       )}
                                                       {allHospitalsSelected && (
                                                         <tr
-                                                          className={`division_avg ${
-                                                            division.id == null
+                                                          className={`division_avg ${division.id == null
                                                               ? "d-none"
                                                               : ""
-                                                          }`}
+                                                            }`}
                                                         >
                                                           <td>
                                                             <button>
@@ -770,17 +766,16 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                                 "URL"
                                                               )}
                                                               target="_blank"
-                                                              className={`details ${
-                                                                this.findMatrixValues(
-                                                                  subGoal.id,
-                                                                  kpi.id,
-                                                                  division.id,
-                                                                  dataGoalMetrix,
-                                                                  "URL"
-                                                                ) === null
+                                                              className={`details ${this.findMatrixValues(
+                                                                subGoal.id,
+                                                                kpi.id,
+                                                                division.id,
+                                                                dataGoalMetrix,
+                                                                "URL"
+                                                              ) === null
                                                                   ? "disabled"
                                                                   : ""
-                                                              }`}
+                                                                }`}
                                                             >
                                                               Click
                                                             </a>
@@ -858,17 +853,16 @@ export default class SystemGoalOperatingModel extends React.Component<
                                                           "URL"
                                                         )}
                                                         target="_blank"
-                                                        className={`details ${
-                                                          this.findMatrixValues(
-                                                            subGoal.id,
-                                                            kpi.id,
-                                                            organization.id,
-                                                            dataGoalMetrix,
-                                                            "URL"
-                                                          ) === null
+                                                        className={`details ${this.findMatrixValues(
+                                                          subGoal.id,
+                                                          kpi.id,
+                                                          organization.id,
+                                                          dataGoalMetrix,
+                                                          "URL"
+                                                        ) === null
                                                             ? "disabled"
                                                             : ""
-                                                        }`}
+                                                          }`}
                                                       >
                                                         Click
                                                       </a>
@@ -891,282 +885,392 @@ export default class SystemGoalOperatingModel extends React.Component<
                     </div>
                   </div>
 
-
                   {/* static */}
                   <div className="system_oprating_model">
-                  <div className="system_goel_container">
-  <div className="box_model ">
-    <div className="header">Quality Experience</div>
-    <div>
-      <div>
-        <div className="inner_container">
-          <div className="inner_header">Throughput and Access</div>
-          <table>
-            <thead className="kpi_name_title">
-              <tr>
-                <th>
-                  Excess Days
-                  <div>YTD 24: [month-month]</div>
-                </th>
-                <th>
-                  Baseline <br /> (FY 23)
-                </th>
-                <th>FYTD24</th>
-                <th>Threshold</th>
-                <th>Target</th>
-                <th>Max</th>
-                <th>Points</th>
-                <th className="comments">Comments</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>200996</td>
-                <td>191620</td>
-                <td>190599</td>
-                <td>187530</td>
-                <td>184460</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead className="kpi_name_title">
-              <tr>
-                <th>
-                  HTN BP Control (%)
-                  <div className="small_title">YTD 24: [month-month]</div>
-                </th>
-                <th>
-                  Baseline <br /> (FY 23)
-                </th>
-                <th>FYTD24</th>
-                <th>Threshold</th>
-                <th>Target</th>
-                <th>Max</th>
-                <th>Points</th>
-                <th className="comments">Comments</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead className="kpi_name_title">
-              <tr>
-                <th>
-                  DM BP (%)
-                  <div className="small_title">YTD 24: [month-month]</div>
-                </th>
-                <th>
-                  Baseline <br /> (FY 23)
-                </th>
-                <th>FYTD24</th>
-                <th>Threshold</th>
-                <th>Target</th>
-                <th>Max</th>
-                <th>Points</th>
-                <th className="comments">Comments</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-              <tr className="division_avg ">
-                <td>
-                  <button>Metro Boston Division (Avg)</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead className="kpi_name_title">
-              <tr>
-                <th>
-                  DM A1c (%)
-                  <div className="small_title">YTD 24: [month-month]</div>
-                </th>
-                <th>
-                  Baseline <br /> (FY 23)
-                </th>
-                <th>FYTD24</th>
-                <th>Threshold</th>
-                <th>Target</th>
-                <th>Max</th>
-                <th>Points</th>
-                <th className="comments">Comments</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button>Joslin</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-              <tr className="division_avg ">
-                <td>
-                  <button>Metro Boston Division (Avg)</button>
-                </td>
-                <td>70.8</td>
-                <td>52.6</td>
-                <td>76.1</td>
-                <td>78.1</td>
-                <td>80.1</td>
-                <td>0</td>
-                <td>
-                  <textarea defaultValue={""} />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                    <div className="system_goel_container">
+                      <div className="box_model ">
+                        <div className="header">Quality Experience</div>
+                        <div>
+                          <div>
+                            <div className="inner_container">
+                              <div className="inner_header">Throughput and Access</div>
+                              <table>
+                                <thead className="kpi_name_title">
+                                  <tr>
+                                    <th>
+                                      Excess Days
+                                      <div>YTD 24: [month-month]</div>
+                                    </th>
+                                    <th>
+                                      Baseline <br /> (FY 23)
+                                    </th>
+                                    <th>FYTD24</th>
+                                    <th>Threshold</th>
+                                    <th>Target</th>
+                                    <th>Max</th>
+                                    <th>Points</th>
+                                    <th>Details</th>
+                                    <th className="comments">Comments</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <button>Joslin</button>
+                                    </td>
+                                    <td>200996</td>
+                                    <td>191620</td>
+                                    <td>190599</td>
+                                    <td>187530</td>
+                                    <td>184460</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <button>BIDMC</button>
+                                    </td>
+                                    <td>200996</td>
+                                    <td>191620</td>
+                                    <td>190599</td>
+                                    <td>187530</td>
+                                    <td>184460</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <thead className="kpi_name_title">
+                                  <tr>
+                                    <th>
+                                      HTN BP Control (%)
+                                      <div className="small_title">YTD 24: [month-month]</div>
+                                    </th>
+                                    <th>
+                                      Baseline <br /> (FY 23)
+                                    </th>
+                                    <th>FYTD24</th>
+                                    <th>Threshold</th>
+                                    <th>Target</th>
+                                    <th>Max</th>
+                                    <th>Points</th>
+                                    <th>Details</th>
+                                    <th className="comments">Comments</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <button>AJH</button>
+                                    </td>
+                                    <td>70.8</td>
+                                    <td>52.6</td>
+                                    <td>76.1</td>
+                                    <td>78.1</td>
+                                    <td>80.1</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <button>LHMC</button>
+                                    </td>
+                                    <td>70.8</td>
+                                    <td>52.6</td>
+                                    <td>76.1</td>
+                                    <td>78.1</td>
+                                    <td>80.1</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <button>BIDMC</button>
+                                    </td>
+                                    <td>70.8</td>
+                                    <td>52.6</td>
+                                    <td>76.1</td>
+                                    <td>78.1</td>
+                                    <td>80.1</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <thead className="kpi_name_title">
+                                  <tr>
+                                    <th>
+                                      DM BP (%)
+                                      <div className="small_title">YTD 24: [month-month]</div>
+                                    </th>
+                                    <th>
+                                      Baseline <br /> (FY 23)
+                                    </th>
+                                    <th>FYTD24</th>
+                                    <th>Threshold</th>
+                                    <th>Target</th>
+                                    <th>Max</th>
+                                    <th>Points</th>
+                                    <th>Details</th>
+                                    <th className="comments">Comments</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <button>Joslin</button>
+                                    </td>
+                                    <td>73.5</td>
+                                    <td>53.8</td>
+                                    <td>71.7</td>
+                                    <td>73.7</td>
+                                    <td>75.7</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                  <tr className="division_avg ">
+                                    <td>
+                                      <button>Metro Boston Division (Avg)</button>
+                                    </td>
+                                    <td>70.8</td>
+                                    <td>52.6</td>
+                                    <td>76.1</td>
+                                    <td>78.1</td>
+                                    <td>80.1</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <thead className="kpi_name_title">
+                                  <tr>
+                                    <th>
+                                      DM A1c (%)
+                                      <div className="small_title">YTD 24: [month-month]</div>
+                                    </th>
+                                    <th>
+                                      Baseline <br /> (FY 23)
+                                    </th>
+                                    <th>FYTD24</th>
+                                    <th>Threshold</th>
+                                    <th>Target</th>
+                                    <th>Max</th>
+                                    <th>Points</th>
+                                    <th>Details</th>
+                                    <th className="comments">Comments</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <button>Joslin</button>
+                                    </td>
+                                    <td>76.8</td>
+                                    <td>40.7</td>
+                                    <td>69.1</td>
+                                    <td>71.1</td>
+                                    <td>73.1</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <button>BIDMC</button>
+                                    </td>
+                                    <td>76.8</td>
+                                    <td>40.7</td>
+                                    <td>69.1</td>
+                                    <td>71.1</td>
+                                    <td>73.1</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                  <tr className="division_avg ">
+                                    <td>
+                                      <button>Metro Boston Division (Avg)</button>
+                                    </td>
+                                    <td>70.8</td>
+                                    <td>52.6</td>
+                                    <td>76.1</td>
+                                    <td>78.1</td>
+                                    <td>80.1</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
 
-                    
+                              <table>
+                                <thead className="kpi_name_title">
+                                  <tr>
+                                    <th>
+                                      Inpatient Responsisiveness(%)
+                                      <div className="small_title">YTD 24: [month-month]</div>
+                                    </th>
+                                    <th>
+                                      Baseline <br /> (FY 23)
+                                    </th>
+                                    <th>FYTD24</th>
+                                    <th>Threshold</th>
+                                    <th>Target</th>
+                                    <th>Max</th>
+                                    <th>Points</th>
+                                    <th>Details</th>
+                                    <th className="comments">Comments</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <button>Joslin</button>
+                                    </td>
+                                    <td>59.5</td>
+                                    <td>57.75</td>
+                                    <td>59.49</td>
+                                    <td>59.51</td>
+                                    <td>62.61</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <table>
+                                <thead className="kpi_name_title">
+                                  <tr>
+                                    <th>
+                                      Ambulatory Visit Rating (%)
+                                      <div className="small_title">YTD 24: [month-month]</div>
+                                    </th>
+                                    <th>
+                                      Baseline <br /> (FY 23)
+                                    </th>
+                                    <th>FYTD24</th>
+                                    <th>Threshold</th>
+                                    <th>Target</th>
+                                    <th>Max</th>
+                                    <th>Points</th>
+                                    <th>Details</th>
+                                    <th className="comments">Comments</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <button>Joslin</button>
+                                    </td>
+                                    <td>87.7</td>
+                                    <td>88.93</td>
+                                    <td>87.87</td>
+                                    <td>87.8</td>
+                                    <td>87.9</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                  <tr className="division_avg ">
+                                    <td>
+                                      <button>Metro Boston Division (Avg)</button>
+                                    </td>
+                                    <td>70.8</td>
+                                    <td>52.6</td>
+                                    <td>76.1</td>
+                                    <td>78.1</td>
+                                    <td>80.1</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <thead className="kpi_name_title">
+                                  <tr>
+                                    <th>
+                                      Readmissions (%)
+                                      <div className="small_title">YTD 24: [month-month]</div>
+                                    </th>
+                                    <th>
+                                      Baseline <br /> (FY 23)
+                                    </th>
+                                    <th>FYTD24</th>
+                                    <th>Threshold</th>
+                                    <th>Target</th>
+                                    <th>Max</th>
+                                    <th>Points</th>
+                                    <th>Details</th>
+                                    <th className="comments">Comments</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <button>Joslin</button>
+                                    </td>
+                                    <td>10.71</td>
+                                    <td>10.69</td>
+                                    <td>10.25</td>
+                                    <td>10.05</td>
+                                    <td>9.85</td>
+                                    <td>0</td>
+                                    <td><a href="" className="details">Click</a></td>
+                                    <td>
+                                      <textarea defaultValue={""} />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </>
               ))}
             </div>
           </div>
         </div>
-
         <div className={styles.dummy}></div>
       </section>
     );
